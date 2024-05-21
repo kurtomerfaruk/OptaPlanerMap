@@ -1,0 +1,14 @@
+<solver>
+    <solutionClass>com.kurtomerfaruk.optaplanermap.solutions.TspSolution</solutionClass>
+    <entityClass>com.kurtomerfaruk.optaplanermap.models.Customer</entityClass>
+    <scoreDirectorFactory>
+        <easyScoreCalculatorClass>com.kurtomerfaruk.optaplanermap.solutions.TspEasyScoreCalculator</easyScoreCalculatorClass>
+    </scoreDirectorFactory>
+    <termination>
+        <secondsSpentLimit>30</secondsSpentLimit>
+    </termination>
+    <valueRangeProvider id="sequenceRange">
+        <from>0</from>
+        <to>100</to>
+    </valueRangeProvider>
+</solver>
